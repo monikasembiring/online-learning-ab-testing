@@ -1,1 +1,14 @@
-# online-learning-ab-testing
+# Effect of Camera Use in Online Learning on Participant Performance
+This analysis was originally a project for the 95819 - A/B Testing, Design and Analysis course at Carnegie Mellon University. 
+
+## Background and Motivation
+Online learning has become more popular due to the COVID pandemic. Even after the pandemic restrictions are lifted, some schools/universities keep providing virtual education. With this shift in how people study, online learning is predicted to sustain in the future. Since online learning came into place, many kinds of research have been conducted. One of the interesting aspects analyzed was turning videos on during class. Many researchers have found that having the camera on enabled engagement and class participation. However, is the class engagement aligned with the participant's performance in learning the materials taught?
+
+## Problem Statement
+With this question in mind, we analyzed whether having the video on and being recorded during online learning affects participant learning. In this case, the setting has no interaction with other students or instructors and the learner is not being visually perceived by anyone while they are watching the video. The participants will only watch a pre-recorded video and then be evaluated on whether they understood the materials taught. Before watching the video, the participants were randomly sent a requirement to turn on their video and record themselves while watching the video, and they could choose to follow the requirement or not.
+
+## Method
+We did four analyses to address the question to check different causal effects. The first is to check whether the requirement to use their camera affects the participant's learning (ITT). The second is to assess whether the decision to use their camera affects the participant's learning (LATE). The third is to check whether having the camera on for at least 40% of the video duration (120 seconds) has a causal effect on a participant's learning (LATE within LATE). The last question is to check for any different causal effect for the groups with versus without prior knowledge of the subject taught (LATE with heterogeneous causal effect).
+
+## Result
+Based on the results we obtained after running regressions for each of those four questions, we did not find any statistically significant causal effect. These findings are different from our hypothesis. We believe that the causal effect is not statistically significant due to the small sample size we obtained (N=254). This limited sample size resulted in an even smaller number of participants who had the camera on for at least 40% of the video duration. We recommend future studies to collect more data to increase the power of the study and find data fields that explain participant attention level better, such as eye movement along the material on the screen. Even though most of the result is not statistically significant, this analysis can be a baseline for future studies.
